@@ -1,4 +1,4 @@
-# Database Project -- Java Application with SQL
+# Spring Boot Website
 ## Project for univeristy
 
 ## The goal of the app
@@ -83,7 +83,7 @@ Profiles:
 
 ## Code solution
 <pre>
-Application with a Java Swing interface for high school student management, data retrieval done in Java, SQL database.
+An website with Spring Boot for the backend, frontend created with Thymeleaf, HTML, CSS, Bootstrap and for the stoarege a SQL database.
 Features:
 - Adding new students to the system as scholarship or non-scholarship students.
 - Modifying student data.
@@ -122,18 +122,16 @@ Roles:
 It includes essential features for data management, reporting, and user interaction.
 </pre>
 ### Programing languages and technology used
-<img align="left" width="40px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" /> 
+<img align="left" width="40px" style="padding-right:10px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Spring_Boot.svg/768px-Spring_Boot.svg.png" /> 
+<img align="left" width="40px" style="padding-right:10px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" /> 
+<img align="left" width="40px" style="padding-right:10px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" /> 
 <img align="left" width="40px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" /> 
 <img align="left" width="40px" style="padding-right:10px" src="https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/a70ec2cd-1130-4719-ab97-0f7d0a67b843" /> 
 
 <br>
-<br>
 
-<pre>
-I used the JConnector driver to establish the connection between the Java program and the database.
-  ->For saving files in .xlsx format, I used POI, XMLBEANS, LOG4J.
-  ->For creating animations, I used TIMINGFRAMEWORK.
-</pre>
+### Admin -> Email: andrei@cuza.com, Password: admin
+### Secretary -> Email: ana@cuza.com, Password: sec
 <br>
 
 ### Data base - concept
@@ -141,54 +139,50 @@ I used the JConnector driver to establish the connection between the Java progra
 
 ### How to use it
 #### The program opens with a login window where authorized individuals need to log in using their institutional email and password.
-![Screenshot_20221224_040928](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/bae84836-dfae-4091-bc82-8735a6cd8436)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/4621c042-1ad6-4d19-9d36-7ec920726b37)
 #### Access credentials of the authorized person.
-![Screenshot_20221224_040953](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/30b1d755-163d-4a69-8114-8f694f2ed9e6)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/e27da42b-3b47-4068-b84f-94c1ff6eb0f5)
 #### Invalid access data, data validation is observed during authentication, the person must repeat the login operation.
-![Screenshot_20221224_041252](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/c6816a2f-e1e5-4b17-acdd-feacf7630e36)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/34357c0a-a0bc-4550-a110-e622bb458213)
+#### Register a new person
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/00c83f2a-8006-4824-be6a-d7c97cc72106)
 ### Based on the authentication data used, the person, depending on their role as either an administrator or secretary, will see an interface that allows them to perform role-specific activities.
 ### View Administrator:
-#### This person has access to 4 panels, and the data in them is modified in real-time.
-![Screenshot_20221224_043004](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/83407333-fc66-43a8-a38c-4280a579cbac)
+#### This person has access to all the panels, and the data in them is modified in real-time.
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/99c19ae9-9d12-451a-a41e-a5b6500f9e22)
 #### He can add a student by filling in the specific fields.
-![Screenshot_20221224_043004](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/ec610e9c-9b3a-463b-8818-5fa71e11753d)
-#### After clicking the add button, a pop-up appears to announce whether the insertion was successful in the database, meaning if the data met the validation requirements.
-![Screenshot_20221224_043103](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/784a2e80-39b6-4393-a33b-cd1317ef623d)
-#### The process of modifying a student also involves the same pop-up system to announce the outcome of the operation.
-![Screenshot_20221224_043730](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/a0bcfbd1-9ea5-4ca2-82f9-f2a2c2c0ab0d)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/5ed950bf-94b0-4e7d-9ea4-3beb9c427777)
+#### The process of modifying a student.
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/fd392758-39d9-4a91-baac-54f0d87e4561)
 #### Deletion - removing a student from the database, with a pop-up system to announce the outcome of the operation. Before deleting student 1188:
-![Screenshot_20221224_044026](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/42c4727b-8ea5-40cd-bf85-3df9e4f1717e)
-![Screenshot_20221224_044129](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/08b71e4e-23c6-4f55-bf71-8c2ebb7b42f6)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/cab04e76-54db-425b-9869-502966dc0acd)
 #### After
-![Screenshot_20221224_044146](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/b0c67ae7-22a0-4f64-9c9c-0d4e89d17f7d)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/be3d266d-1313-4736-bc05-3f860a5c51f5)
 #### Listing data from tables with scholarship recipients and the type of scholarships:
-![Screenshot_20221224_044405](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/386d134c-8a0d-4e3c-bb30-2178a3d442a1)
-#### Pie chart graphics with important data from tables.
-![Screenshot_20221224_044631](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/b53c09f7-1a5b-4208-b4c1-333c32bdb4e6)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/231bf47b-146c-4435-a8e3-472500d17eb7)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/e08cf5c3-b78f-4796-ac8c-e8e0a199564d)
+#### Pie chart and Bar chart graphics with important data from tables.
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/926a3806-82e8-4df7-93cb-34f067584a57)
 #### Real-time analysis of activities on the platform.
-![Screenshot_20221224_044753](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/f1dff0ac-33ab-49d1-8872-68aac2dfabcc)
-#### Saving the student table to an Excel file.
-![Screenshot_20221224_045324](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/5b1d2d3c-7ce8-4add-b05e-5c54578218b7)
-![Screenshot_20221224_045357](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/c9d12f73-c363-498c-96b1-1aa73e3b0972)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/6d0fdd27-0b18-4015-9c22-c9af90ecec86)
+#### Raport generating in Excel, PDF and the process of uploading
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/b1aec124-8401-47cd-94a6-2516d34fe170)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/4ffad44a-c0f8-4bcb-86f1-4875dbdb0c1c)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/3a6b7aea-e3df-4932-9c63-77a324e4529a)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/dc233f0d-01fa-4eb2-b35e-28817d9acd4c)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/147ca1f7-f790-403f-b21c-47b982a47097)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/c16ce417-1ced-4b76-8546-c77ff5e7dbaf)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/e2917aef-6792-4b6a-852f-dd151a7a6e8e)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/a05e9efd-1a8f-48ea-85c2-fbf0c360c8c8)
+
 ### View Secretary:
-#### He has access to 3 panels, and the data in them is modified in real-time.
-![Screenshot_20221224_045627](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/3f81bd21-f8f3-42d6-b505-e89ecaccf1ea)
+#### He has access all the panels except analysis of activities. The data in them is modified in real-time.
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/f9068f79-d043-4697-9416-b0bbcc3ed1ce)
 #### He can filter student data based on multiple conditions such as class, minimum average in ascending or descending order, and whether they are scholarship recipients or not.
-![Screenshot_20221224_050025](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/a2a21c9b-99c7-47c3-8fd0-4cd6bda20418)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/4902c0f1-bd13-457b-a360-b9c36dd1e7e2)
 #### Searching for a student by their registration number.
-![Screenshot_20221224_050224](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/2607b55c-727f-4ba9-9401-45dbba3d6cb4)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/ee0e48ac-c84f-430a-9962-3b4d1c116886)
 #### Various types of reports are displayed in the reserved space, here are some examples of reports.
-![Screenshot_20221224_050525](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/e7841763-6ca2-453b-b63e-55c38760b783)
-![Screenshot_20221224_050601](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/fa83a11d-e953-4b20-bce3-14fae3daa741)
-![Screenshot_20221224_050620](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/1d393537-222a-44c6-ad95-1caea81d26a4)
-#### Saving the student table to an Excel file.
-![Screenshot_20221224_050738](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/3f6f4586-7008-4811-9c58-f36ea0d850f4)
-![Screenshot_20221224_050757](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/7992cf48-7d6c-41ed-811c-0c8545e032d4)
-![Screenshot_20221224_050841](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/b7d69e46-1c70-48b7-831e-a6ec88d457cb)
-#### Importing Extracted Data
-![Screenshot_20230110_070535](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/07b17813-b6b6-4a83-8997-33536b961d00)
-![Screenshot_20230110_070612](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/9061e3cf-46db-4cf6-8a6a-fede58cb4f32)
-#### Listing data from tables with scholarship recipients and the type of scholarships.
-![Screenshot_20221224_044959](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/cf7589f3-f1a6-446b-bbd9-c4bf26cb452e)
-#### Pie chart graphics with important data from table
-![Screenshot_20221224_045052](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/dc4d87c2-9b8e-43e9-b21e-9bc3ec253fb0)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/2bfef416-c2f5-4e66-bc9f-d46501628622)
+![image](https://github.com/AgacheAndrei/Database-Project-Java-Application-with-SQL./assets/36128809/c8867ad0-0c9f-4b29-9eb7-2237e67352aa)
+#### And all the other admin activity
