@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Elev</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+</head>
+<body>
+<div th:insert="~{navbar :: content}"></div>
+<br>
+<br>
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+            <h1 class="text-center">Edit Elev</h1>
+            <div class="card-body">
+                <form th:action="@{/update}" th:object="${elev}" method="POST">
+                    <div class="form-group">
+                        <label>Nr Matricol</label>
+                        <input type="text" name="nr_matricol" th:field="*{nr_matricol}" class="form-control"
+                               placeholder="Enter Nr Matricol" />
+                    </div>
+                    <div class="form-group">
+                        <label>CNP</label>
+                        <input type="text" name="CNP" th:field="*{CNP}" class="form-control"
+                               placeholder="Enter CNP" />
+                    </div>
+                    <div class="form-group">
+                        <label>Nume</label>
+                        <input type="text" name="nume" th:field="*{nume}" class="form-control"
+                               placeholder="Enter Nume" />
+                    </div>
+                    <div class="form-group">
+                        <label>Prenume</label>
+                        <input type="text" name="prenume" th:field="*{prenume}" class="form-control"
+                               placeholder="Enter Prenume" />
+                    </div>
+                    <div class="form-group">
+                        <label>Nr Telefon</label>
+                        <input type="text" name="nr_telefon" th:field="*{nr_telefon}" class="form-control"
+                               placeholder="Enter Nr Telefon" />
+                    </div>
+                    <div class="form-group">
+                        <label>Adresa</label>
+                        <input type="text" name="adresa" th:field="*{adresa}" class="form-control"
+                               placeholder="Enter Adresa" />
+                    </div>
+                    <div class="form-group">
+                        <label>Medie</label>
+                        <input type="text" name="medie" th:field="*{medie}" class="form-control"
+                               placeholder="Enter Medie" />
+                    </div>
+                    <div class="form-group">
+                        <label>Acte Aditionale</label>
+                        <input type="text" name="acte_adi" th:field="*{acte_adi}" class="form-control"
+                               placeholder="Enter Acte Aditionale" />
+                    </div>
+                    <div class="form-group">
+                        <label>Cod Clasa</label>
+                        <input type="text" name="codclasa" th:field="*{codclasa}" class="form-control"
+                               placeholder="Enter Cod Clasa" />
+                    </div>
+                    <div class="box-footer">
+                        <button type="submit" class="btn btn-primary">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

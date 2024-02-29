@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Elevi Cuza Manager</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+<div th:insert="~{navbar :: content}"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1> Bursieri </h1>
+        </div>
+    </div>
+
+
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+        <tr class="headings">
+            <th th:each="header: ${headers}" class="column-title" th:text="${header}" />
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr class="even pointer" th:each="row: ${rows}" id="tablerow">
+            <td th:each="header: ${headers}" th:text="${row.get(header)}" />
+        </tr>
+        </tbody>
+
+    </table>
+
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+        <tr class="headings">
+            <th th:each="header_burse: ${headers_burse}" class="column-title" th:text="${header_burse}" />
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr class="even pointer" th:each="rows_burs: ${rows_burse}" id="tablerow2">
+            <td th:each="header_burse: ${headers_burse}" th:text="${rows_burs.get(header_burse)}" />
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+<script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
